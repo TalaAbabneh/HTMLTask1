@@ -29,6 +29,22 @@
             </nav> 
         </header>
         <main >
+            <form action="/submit_form" method="post">
+                <label for="Product Name">Product Name:</label><br>
+                <input type="text" id="Product Name" name="Product Name"><br>
+    
+                <label for="Category">Category:</label><br>
+                <input type="text" id="Category" name="Category"><br>
+    
+                <label for="Price">Price:</label><br>
+                <input type="text" id="Price" name="Price"><br>
+    
+                <input type="radio" id="In Stock" name="Availability" value="In Stock">
+                <label for="In Stock">In Stock</label><br>
+                <input type="radio" id="css" name="Availability" value="Out of Stock">
+                <label for="Out of Stock">Out of Stock</label><br>
+                <input type="submit" value="Submit">
+              </form> 
             <table>
                 <thead>
                     <tr>
@@ -40,69 +56,34 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Dog Food</td>
+                        <td>pet Food</td>
                         <td>Food</td>
                         <td>$20</td>
                         <td>In Stock</td>
                     </tr>
                     <tr>
-                        <td>Cat Toy</td>
+                        <td>pet Toy</td>
                         <td>Toys</td>
                         <td>$10</td>
                         <td>Out of Stock</td>
                     </tr>
                     <tr>
-                        <td>Bird Cage</td>
+                        <td>pet Cage</td>
                         <td>Accessories</td>
                         <td>$50</td>
                         <td>In Stock</td>
                     </tr>
                     <tr>
-                        <td>Fish Tank</td>
-                        <td>Accessories</td>
-                        <td>$100</td>
-                        <td>In Stock</td>
-                    </tr>
+                     </tr>
                     <tr>
                         <td>Rabbit Hutch</td>
                         <td>Housing</td>
                         <td>$120</td>
                         <td>In Stock</td>
-                    </tr>
-                    <tr>
-                        <td>Hamster Wheel</td>
-                        <td>Toys</td>
-                        <td>$15</td>
-                        <td>Out of Stock</td>
-                    </tr>
-                    <tr>
-                        <td>Reptile Heat Lamp</td>
-                        <td>Accessories</td>
-                        <td>$30</td>
-                        <td>In Stock</td>
-                    </tr>
-                    <tr>
-                        <td>Bird Seed</td>
-                        <td>Food</td>
-                        <td>$5</td>
-                        <td>In Stock</td>
-                    </tr>
-                    <tr>
-                        <td>Dog Leash</td>
-                        <td>Accessories</td>
-                        <td>$25</td>
-                        <td>In Stock</td>
-                    </tr>
-                    <tr>
-                        <td>Cat Litter</td>
-                        <td>Accessories</td>
-                        <td>$15</td>
-                        <td>Out of Stock</td>
-                    </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="4">Total Products: 10</td>
+                        <td colspan="4">Total Products:4</td>
                     </tr>
                 </tfoot>
             </table>

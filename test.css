@@ -71,72 +71,94 @@
     padding: 30 px;
     border: none;border-radius: 5px;
 }
-main {
-    max-width: 800px;
-    margin: 150px auto 20px auto;
+main{
+    padding: 0 100 px;
+}
+ h1{
+    text-align: center;
+    margin-top:90px;
+    font-weight: bold;
+    font-size: 36px;
+    color: rgb(218, 110, 182);
+}
+#cat1{
+   
+    float: left; width: 50%; height: 400px;
+}
+#cat1 img , #cat2 img{
+    width: 600px; height: 600px;
+    padding: auto;
+
+}
+#cat2{
+ 
+    width :50%; float: right; height: 200px;
+    
+    
+}
+#cat1 button, #cat2 button {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(218, 110, 182);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;;
+    
+}
+#cat1 button {
+    margin-top:60px;
+    margin-left:200px;
+}
+#cat2 button {
+    margin-top: 70px;
+    margin-left:200px;
+}
+#cat1 button:hover, #cat2 button:hover {
+    background-color: rgb(116, 0, 77);
+}
+.p12 {
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
-    background-color: white;
+    margin-top: 900px; 
+}
+
+.p12 > div {
+    flex: 1;
+    margin: 10px;
+}
+
+.paragraph1, .paragraph2 {
+    background-color: #f1f1f1; 
+    padding: 20px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-form {
-    margin-bottom: 20px;
+
+.footer{
+    background-color: rgb(204, 204, 204);
+    display:flex;
+    justify-content: right;
+    list-style: none;
 }
-label {
+.footer li{
+    font-size: 19px;
+    margin-right: 150px;
+    margin-left: 100px;
+    list-style: none;
     display: inline-block;
-    width: 120px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-input[type="text"] {
-    width: 200px;
-    margin-bottom: 10px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+   
 
-input[type="radio"] {
-    margin-bottom: 10px;
 }
+.footer li a{
+    text-align: center;
+    color: rgb(33, 95, 114);
+    text-decoration: none;
 
-input[type="submit"] {
-    display: block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: rgb(33, 102, 102);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
-
-input[type="submit"]:hover {
-    background-color: rgb(27, 83, 83);
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 15px;
-    text-align: left;
-}
-
-th:last-child, td:last-child {
-    width: 50px;
-}
-
-th:nth-child(even) {
-    background-color: rgba(189, 243, 225, 0.5);
-}
-td:nth-child(even) {
-    background-color: rgba(189, 243, 225, 0.5);
-}
-
-
-tfoot {
-    font-weight: bold;
+.footer li a:hover{
+    color: rgb(235, 40, 170);
 }
