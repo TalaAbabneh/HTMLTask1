@@ -88,7 +88,13 @@ main{
 #cat1 img , #cat2 img{
     width: 600px; height: 600px;
     padding: auto;
+    margin-right: 10rem;
+    display: flex;
+    padding:5%;
 
+}
+#cat1 img{
+    margin-left: 10%;
 }
 #cat2{
  
