@@ -26,7 +26,7 @@ function handleSubmit(event) {
     };
 
     addToTable(newProduct);
-    formElement.reset(); // Reset the form fields
+    formElement.reset();
 }
 
 function addToTable(product) {
