@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTMLTask1</title>
         <link rel="stylesheet" href="./style/Products.css">
+        <script src="./jsFILE/app.js" defer></script>
+
     </head>
     <body>
         <header >
@@ -21,7 +23,7 @@
                     <li><a href="#">More</a></li>
                     </ul>  
                 <div class="search">
-                <form>
+                <form >
                         <input type="search" placeholder=" SEARCH">
                         <button><img src="searchicon.png" alt="searchicon" width="20px" height="20px"></button>
                     </form>
@@ -29,23 +31,20 @@
             </nav> 
         </header>
         <main >
-            <form action="/submit_form" method="post">
-                <label for="Product Name">Product Name:</label><br>
-                <input type="text" id="Product Name" name="Product Name"><br>
-    
-                <label for="Category">Category:</label><br>
-                <input type="text" id="Category" name="Category"><br>
-    
-                <label for="Price">Price:</label><br>
-                <input type="text" id="Price" name="Price"><br>
-    
-                <input type="radio" id="In Stock" name="Availability" value="In Stock">
-                <label for="In Stock">In Stock</label><br>
-                <input type="radio" id="css" name="Availability" value="Out of Stock">
-                <label for="Out of Stock">Out of Stock</label><br>
+            <form id="product-form" >
+                <label for="product-name">Product Name:</label><br>
+                <input type="text" id="product-name" name="Product Name"><br>
+                <label for="category">Category:</label><br>
+                <input type="text" id="category" name="Category"><br>
+                <label for="price">Price:</label><br>
+                <input type="text" id="price" name="Price"><br>
+                <input type="radio" id="in-stock" name="Availability" value="In Stock">
+                <label for="in-stock">In Stock</label><br>
+                <input type="radio" id="out-of-stock" name="Availability" value="Out of Stock">
+                <label for="out-of-stock">Out of Stock</label><br>
                 <input type="submit" value="Submit">
               </form> 
-            <table>
+            <table  >
                 <thead>
                     <tr>
                         <th>Product Name</th>
@@ -54,13 +53,7 @@
                         <th>Availability</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>pet Food</td>
-                        <td>Food</td>
-                        <td>$20</td>
-                        <td>In Stock</td>
-                    </tr>
+                <tbody  id="product-table">
                     <tr>
                         <td>pet Toy</td>
                         <td>Toys</td>
@@ -79,7 +72,7 @@
                         <td>Rabbit Hutch</td>
                         <td>Housing</td>
                         <td>$120</td>
-                        <td>In Stock</td>
+                        <td>In Stock</td>  
                 </tbody>
                 <tfoot>
                     <tr>
@@ -88,3 +81,5 @@
                 </tfoot>
             </table>
         </main>
+    </body>
+</html>
