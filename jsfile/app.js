@@ -8,10 +8,9 @@ function getCheckedAvailability() {
     const availability = document.querySelector('input[name="Availability"]:checked');
     return availability ? availability.value : '';
 }
-
 function handleSubmit(event) {
-    event.preventDefault(); 
-
+    event.preventDefault();
+    
     let productName = getFormValue('product-name');
     let category = getFormValue('category');
     let price = getFormValue('price');
