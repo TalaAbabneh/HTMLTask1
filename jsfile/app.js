@@ -4,7 +4,6 @@ const productTableBody = document.getElementById('product-table');
 function getFormValue(id) {
     return document.getElementById(id).value;
 }
-
 function getCheckedAvailability() {
     const availability = document.querySelector('input[name="Availability"]:checked');
     return availability ? availability.value : '';
