@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTMLTask1</title>
         <link rel="stylesheet" href="./style/Products.css">
+        <script src="./jsFILE/app.js" defer></script>
+
     </head>
     <body>
         <header >
@@ -29,20 +31,17 @@
             </nav> 
         </header>
         <main >
-            <form action="/submit_form" method="post">
-                <label for="Product Name">Product Name:</label><br>
-                <input type="text" id="Product Name" name="Product Name"><br>
-    
-                <label for="Category">Category:</label><br>
-                <input type="text" id="Category" name="Category"><br>
-    
-                <label for="Price">Price:</label><br>
-                <input type="text" id="Price" name="Price"><br>
-    
-                <input type="radio" id="In Stock" name="Availability" value="In Stock">
-                <label for="In Stock">In Stock</label><br>
-                <input type="radio" id="css" name="Availability" value="Out of Stock">
-                <label for="Out of Stock">Out of Stock</label><br>
+            <form  id="product-form" action="/submit_form" method="post" >
+                <label for="product-name">Product Name:</label><br>
+                <input type="text" id="product-name" name="Product Name"><br>
+                <label for="category">Category:</label><br>
+                <input type="text" id="category" name="Category"><br>
+                <label for="price">Price:</label><br>
+                <input type="text" id="price" name="Price"><br>
+                <input type="radio" id="in-stock" name="Availability" value="In Stock">
+                <label for="in-stock">In Stock</label><br>
+                <input type="radio" id="out-of-stock" name="Availability" value="Out of Stock">
+                <label for="out-of-stock">Out of Stock</label><br>
                 <input type="submit" value="Submit">
               </form> 
             <table>
@@ -54,9 +53,9 @@
                         <th>Availability</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="product-table">
                     <tr>
-                        <td>pet Food</td>
+                        <td>cat Food</td>
                         <td>Food</td>
                         <td>$20</td>
                         <td>In Stock</td>
@@ -67,23 +66,10 @@
                         <td>$10</td>
                         <td>Out of Stock</td>
                     </tr>
-                    <tr>
-                        <td>pet Cage</td>
-                        <td>Accessories</td>
-                        <td>$50</td>
-                        <td>In Stock</td>
-                    </tr>
-                    <tr>
-                     </tr>
-                    <tr>
-                        <td>Rabbit Hutch</td>
-                        <td>Housing</td>
-                        <td>$120</td>
-                        <td>In Stock</td>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="4">Total Products:4</td>
+                        <td colspan="2">Total Products:2</td>
                     </tr>
                 </tfoot>
             </table>
